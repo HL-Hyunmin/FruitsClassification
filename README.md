@@ -228,7 +228,8 @@ fig.savefig("Cost.jpg")
 
 train, test 에 대한 cost,accuracy 를 리스트에 저장하여 한 그래프에 train,test 에 대한 cost 혹은 accuracy를 나타낸다.
 
-![base_acc](./DM_Project_img/base_acc.png)
+![base_acc](./DM_Project_img/base_acc.png width="300")
+<br>
 ![base cost](./DM_Project_img/base_cost.png)
 
 # Test Model
@@ -284,8 +285,11 @@ save_confusion_matrix(label[:len(fy_list)], fy_list, label=list(range(103)),path
 # Feed Back
 - 초기 모델에 대한 그래프와 학습 결과를 바탕으로 어느 부분(저차원 , 고차원인지)이 부족한지 완벽하게 예측 할 수는 없지만  해당 부분에 대해 의심을 가지고 모델을 재구성한다.
 
+### 아래 표는 모델이 예측한 값 중 실제 라벨이 다르게 예측한 Precision(정밀도) 표이다.
+![predict fail](./DM_Project_img/predict_fail.png)
+
 # Train Model_improved
-- 각 종 지표를 확인해보았을 때 저차원 특징이 부족하고 전체적으로 overfitting 되었다고 의심이 들어서 이에 대한 보완으로 저차원 layer 특징 수와 Dropout layer를 추가하고 Hidden Layer 수는 줄였다.
+- 위의 지표를 확인해보았을 때 저차원 특징이 부족하고 전체적으로 overfitting 되었다고 의심이 들어서 이에 대한 보완으로 저차원 layer 특징 수와 Dropout layer를 추가하고 Hidden Layer 수는 줄였다.
 
 - 일부의 특징 만 가지고 모델을 판단 할 수 있으므로 L2 loss를 추가하였다.
 
