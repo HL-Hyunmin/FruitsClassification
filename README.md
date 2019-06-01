@@ -228,7 +228,7 @@ fig.savefig("Cost.jpg")
 
 train, test 에 대한 cost,accuracy 를 리스트에 저장하여 한 그래프에 train,test 에 대한 cost 혹은 accuracy를 나타낸다.
 
-![base_acc](C:/Users/hwlee/Desktop/DM_Project_img/base_acc.png)
+![base_acc](./DM_Project_img/base_acc.png)
 
 
 # Test Model
