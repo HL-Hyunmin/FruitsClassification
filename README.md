@@ -229,7 +229,7 @@ fig.savefig("Cost.jpg")
 train, test 에 대한 cost,accuracy 를 리스트에 저장하여 한 그래프에 train,test 에 대한 cost 혹은 accuracy를 나타낸다.
 
 ![base_acc](./DM_Project_img/base_acc.png)
-
+![base cost](./DM_Project_img/base_cost.png)
 
 # Test Model
 - 학습한 모델에 대한 session을 재 설정하고 Confusion Maxtrix 그래프를 그린다.
@@ -279,7 +279,7 @@ save_confusion_matrix(label[:len(fy_list)], fy_list, label=list(range(103)),path
 ```
 학습이 완료된 모델에 대해 모델이 예측한 값에 대해 실제 라벨 값과 다르게 예측한 것을 나타내는 지표인 Confusion Matrix 그래프를 그린다.
 
-![base_acc](C:/Users/hwlee/Desktop/DM_Project_img/base_confusion.png )
+![base_confusion](./DM_Project_img/base_confusion.png )
 
 # Feed Back
 - 초기 모델에 대한 그래프와 학습 결과를 바탕으로 어느 부분(저차원 , 고차원인지)이 부족한지 완벽하게 예측 할 수는 없지만  해당 부분에 대해 의심을 가지고 모델을 재구성한다.
@@ -438,10 +438,12 @@ if __name__ == "__main__":
 
 ```
 초기 모델 코드와 동일한 역할을 한다.
-![base_acc](C:/Users/hwlee/Desktop/DM_Project_img/new_cost.png)
+![new_acc](./DM_Project_img/new_acc.png)
+![new_cost](./DM_Project_img/new_cost.png)
+
 # Plotting & Test
  - 이하 초기 모델의 Plotting, Test Model 과 동일하다.
-![base_acc](C:/Users/hwlee/Desktop/DM_Project_img/new_confusion.png)
+![new confusion](./DM_Project_img/new_confusion.png)
 
 # 결론 및 느낀 점
 - 초기 모델을 개선 해서 초기 보다 적합한 모델을 만들었지만 개선 모델의 Confusion Metrix로 보아 아직 overfitting 되었을 가능성이 있고, 충분히 더 개선 될 수 있다.
