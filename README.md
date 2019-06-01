@@ -442,8 +442,10 @@ if __name__ == "__main__":
 
 ```
 초기 모델 코드와 동일한 역할을 한다.
+
 ![new_acc](./DM_Project_img/new_acc.png)
-<br>
+
+<br><br>
 ![new_cost](./DM_Project_img/new_cost.png)
 
 # Plotting & Test
