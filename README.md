@@ -291,7 +291,7 @@ save_confusion_matrix(label[:len(fy_list)], fy_list, label=list(range(103)),path
 # Train Model_improved
 - 위의 지표를 확인해보았을 때 저차원 특징이 부족하고 전체적으로 overfitting 되었다고 의심이 들어서 이에 대한 보완으로 저차원 layer 특징 수와 Dropout layer를 추가하고 Hidden Layer 수는 줄였다.
 
-- 일부의 특징 만 가지고 모델을 판단 할 수 있으므로 L2 loss를 추가하였다.
+- 모델이 일부의 특징 만 가지고 모델을 판단 할 수 있으므로 L2 loss를 추가하였다.
 
 ```python
 batch_size = 350
@@ -443,10 +443,12 @@ if __name__ == "__main__":
 ```
 초기 모델 코드와 동일한 역할을 한다.
 ![new_acc](./DM_Project_img/new_acc.png)
+<br>
 ![new_cost](./DM_Project_img/new_cost.png)
 
 # Plotting & Test
  - 이하 초기 모델의 Plotting, Test Model 과 동일하다.
+ 
 ![new confusion](./DM_Project_img/new_confusion.png)
 
 # 결론 및 느낀 점
